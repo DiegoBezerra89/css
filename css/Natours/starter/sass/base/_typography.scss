@@ -1,0 +1,42 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 3rem;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-gray-dark;
+}
+
+.header {
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+
+    &--main {
+        display: block;
+        letter-spacing: 3.5rem;
+        font-size: 6rem;
+        font-weight: 400;
+        animation: moveToRight 1s ease-out;
+    }
+    &--sub {
+        display: block;
+        letter-spacing: 1.75rem;
+        font-size: 2rem;
+        font-weight: 400;
+        animation: moveToLeft 1s ease-out;
+    }
+}
