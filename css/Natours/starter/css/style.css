@@ -40,6 +40,9 @@ Dark green: #28b485
   padding: 0;
   box-sizing: inherit; }
 
+body {
+  box-sizing: border-box; }
+
 html {
   font-size: 62.5%; }
 
@@ -48,8 +51,31 @@ body {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
-  box-sizing: border-box; }
+  color: #777; }
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 4rem; }
+  .heading-primary--main {
+    display: block;
+    letter-spacing: 3.5rem;
+    font-size: 6rem;
+    font-weight: 400;
+    animation: moveToRight 1s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    letter-spacing: 1.75rem;
+    font-size: 2rem;
+    font-weight: 400;
+    animation: moveToLeft 1s ease-out; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -94,6 +120,19 @@ body {
   z-index: -1;
   display: inline-block; }
 
+.row {
+  max-width: 114rem;
+  background-color: #eee;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2);
+    background-color: orangered;
+    float: left; }
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 6rem; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
@@ -107,26 +146,3 @@ body {
     left: 4rem; }
   .header__logo {
     height: 4rem; }
-  .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 4rem; }
-  .heading-primary--main {
-    display: block;
-    letter-spacing: 3.5rem;
-    font-size: 6rem;
-    font-weight: 400;
-    animation: moveToRight 1s ease-out; }
-  .heading-primary--sub {
-    display: block;
-    letter-spacing: 1.75rem;
-    font-size: 2rem;
-    font-weight: 400;
-    animation: moveToLeft 1s ease-out; }
