@@ -40,3 +40,12 @@ body {
         animation: moveToLeft 1s ease-out;
     }
 }
+
+.heading-secondary {
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+}
