@@ -7,7 +7,7 @@ body {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 400;
     line-height: 1.7;
-    color: $color-gray-dark;
+    color: $color-grey-dark;
 }
 
 .header {
@@ -48,4 +48,17 @@ body {
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.heading-tertiary {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $font-size-default;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
 }

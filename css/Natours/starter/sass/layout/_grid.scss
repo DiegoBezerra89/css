@@ -7,7 +7,7 @@
         margin-bottom: $gutter-vertical;
     }
 
-    [class^="col-"] {
+    [class^="col-"] { 
         float: left;
         padding: 20px;
         &:not(:last-child) {
