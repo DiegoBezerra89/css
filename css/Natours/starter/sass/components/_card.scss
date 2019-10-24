@@ -3,10 +3,10 @@
     -moz-perspective: 150rem;
     perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 51rem;
     text-align: center;
     &__side {
-        height: 50rem;
+        height: 51rem;
         transition: all .9s ease;
         background-color: orangered;
         position: absolute;
@@ -16,6 +16,7 @@
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 3px;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
@@ -49,17 +50,19 @@
     &__picture {
         height: 45%;
         background-size: cover;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         position: relative;
         overflow: auto;
+        background-blend-mode: screen;
         &--1{
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light,.6),rgba($color-secondary-dark,.6)), url("../../img/nat-5.jpg") ;
+            background-image: linear-gradient(to right bottom, $color-secondary-light , $color-secondary-dark), url("../../img/nat-5.jpg") ;
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light,.6),rgba($color-primary-dark,.6)), url("../../img/nat-6.jpg") ;
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url("../../img/nat-6.jpg") ;
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light,.6),rgba($color-tertiary-dark,.6)), url("../../img/nat-7.jpg") ;
+            background-image: linear-gradient(to right bottom, $color-tertiary-light,  $color-tertiary-dark), url("../../img/nat-7.jpg") ;
         }
     }
     &__header {
@@ -107,20 +110,35 @@
     }
     //TEXT FRONT SIDE
     &__text {
-        font-size: 1.5rem;
-        padding: 2rem 6rem;
+        padding: 3rem;
 
-        &--table {
-            width: 100%;
+        ul {
+            list-style-type: none;
+            font-size: 1.5rem;
 
-            &--tr:last-child td {
-                border-bottom: 0;
+            li {
+                padding: 1rem;
+                
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
             }
+        }
+    }
 
-            &--td {
-                padding: .8rem;
-                border-bottom: .1rem solid rgba($color-grey-dark,.1);
-            }
+    //BACK SIDE
+    &__offer {
+        margin-top: 15rem;
+        color: $color-white;
+        &--text {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        &--price {
+            font-size: 6rem;
+            text-transform: uppercase;
+            font-weight: 200;
         }
     }
 }
