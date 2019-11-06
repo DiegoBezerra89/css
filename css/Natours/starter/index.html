@@ -102,7 +102,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-align-center u-margin-bottom-big">
                     <h2 class="heading-secondary">Most popular tours</h2>
                 </div>
@@ -137,7 +137,7 @@
                                     </h2>
                                 </div>
                                 <div class="card__offer--button">
-                                    <a href="#" class="btn btn--white btn--animated u-margin-top-medium">book now</a>
+                                    <a href="#popup" class="btn btn--white btn--animated u-margin-top-medium">book now</a>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
                                         </h2>
                                     </div>
                                     <div class="card__offer--button">
-                                        <a href="#" class="btn btn--white btn--animated u-margin-top-medium">book now</a>
+                                        <a href="#popup" class="btn btn--white btn--animated u-margin-top-medium">book now</a>
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +207,7 @@
                                     </h2>
                                 </div>
                                 <div class="card__offer--button">
-                                    <a href="#" class="btn btn--white btn--animated u-margin-top-medium">book now</a>
+                                    <a href="#popup" class="btn btn--white btn--animated u-margin-top-medium">book now</a>
                                 </div>
                             </div>
                         </div>
@@ -318,26 +318,23 @@
                 </div>
             </div> 
         </footer>
-        <div class="popup">
+        <div class="popup" id="popup">
             <div class="popup__content">
-                <div class="popup__container row">
-                    <div class="col-1of-3">
-                        <div class="popup__images">
-                                <img class="popup__images-1" src="./img/nat-7.jpg" alt="">
-                                <img class="popup__images-2" src="./img/nat-8.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-2-of-3 popup__text">
-                        <h2 class="heading-secondary">Popup title</h2>
-                        <h3 class="heading-tertiary">Popup subtitle</h3>
-                            <p class="popup__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    
-                            <p class="popup__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="" class="popup__image">
+                    <img src="img/nat-9.jpg" alt="" class="popup__image">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &nbsp; Please read these terms before booking</h3>
+                    <p class="popup__text">
+                        Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Velit laoreet id donec ultrices tincidunt arcu non sodales. Mauris vitae ultricies leo integer malesuada nunc vel risus. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Velit ut tortor pretium viverra suspendisse potenti nullam ac tortor. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Elit pellentesque habitant morbi tristique senectus. Molestie at elementum eu facilisis sed odio morbi quis. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Placerat orci nulla pellentesque dignissim. Et sollicitudin ac orci phasellus egestas tellus rutrum. Orci porta non pulvinar neque laoreet suspendisse. Proin libero nunc consequat interdum varius. Sed sed risus pretium quam vulputate dignissim. Et malesuada fames ac turpis egestas sed tempus urna et. A erat nam at lectus urna duis. Orci porta non pulvinar neque laoreet suspendisse. Sed risus ultricies tristique nulla aliquet enim tortor. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est.
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
                 </div>
             </div>
-        </div> 
+        </div>
     </body>
 </html>
 
