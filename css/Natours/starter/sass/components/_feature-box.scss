@@ -8,6 +8,7 @@
     transition: all .2s;
 
     &__icon {
+        padding-right: 1rem;
         font-size: 6rem;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;

@@ -73,6 +73,9 @@
         &:focus {
             outline: none;
         }
+        @include respond(tab-land) {
+            
+        }
     }
 }
 

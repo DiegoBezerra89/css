@@ -4,11 +4,22 @@
     color: $color-grey-light-2;
     font-size: 1.5rem;
 
+    @include respond(phone) {
+        padding: 3rem;
+    }
+
     &__logo-box {
         text-align: center;
+        margin-bottom: 8rem;
 
         @include respond(tab-port) {
-            margin-bottom: 8rem 0;
+            margin-bottom: 5rem;
+            margin-top: 2rem;
+        }
+
+        @include respond(phone) {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
     }
 

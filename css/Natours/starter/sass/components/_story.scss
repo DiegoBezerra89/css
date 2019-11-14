@@ -11,6 +11,16 @@
     backface-visibility: hidden;
     transition: all .5s;
 
+    @include respond(tab-port) {
+        width: 100%;
+        padding-left: 7rem;
+        padding: 4rem;
+    }
+
+    @include respond(phone) {
+        transform: skewX(0);
+    }
+
     &__shape {
         height: 15rem;
         width: 15rem;
@@ -23,6 +33,11 @@
         position: relative;
         overflow: hidden;
         backface-visibility: hidden;
+        
+        @include respond(phone) {
+            transform: translateX(-2rem) skewX(0);
+        }
+
     }
 
     &__image {
@@ -36,6 +51,9 @@
 
     &__text {
         transform: skewX(12deg);
+        @include respond(phone) {
+            transform: skewX(0);
+        }
     }
 
     &__caption {
