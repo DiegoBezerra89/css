@@ -2,9 +2,18 @@
     max-width: $grid-width;
     margin: 0 auto;
     @include clearfix;
+
+    @include respond(tab-port) {
+        max-width: 60rem;
+        padding: 0 3rem;
+    }
     
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+
+        @include respond(tab-port) {
+            margin-bottom: $gutter-vertical-small;
+        }
     }
 
     [class^="col-"] { 
@@ -12,6 +21,15 @@
         padding: 20px;
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(tab-port) {
+                margin-bottom: $gutter-vertical-small;
+                margin-right: 0;
+            }
+        }
+
+        @include respond(tab-port) {
+            width: 100% !important;
         }
     }
 

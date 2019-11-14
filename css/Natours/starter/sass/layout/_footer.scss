@@ -1,12 +1,15 @@
 .footer {
     padding: 10rem;
     background-color: $color-grey-dark-3;
-    display: block;
     color: $color-grey-light-2;
     font-size: 1.5rem;
 
     &__logo-box {
         text-align: center;
+
+        @include respond(tab-port) {
+            margin-bottom: 8rem 0;
+        }
     }
 
     &__logo {
@@ -18,7 +21,12 @@
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
         display: inline-block;
-        margin-left: -3rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+        }
     }
 
     &__list {
@@ -29,23 +37,26 @@
     &__item {
         display: inline-block;
         transition: all .3s;
-        cursor: pointer;
         &:hover {
             color: $color-primary-dark;
         }
 
         &:not(:last-child) {
-            margin-right: 2rem;
+            margin-right: 1.5rem;
         }
     }
 
     &__copyright {
-        width: 90%;
+        width: 80%;
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
-        display: inline-block;
         float: right;
-
+        
+        @include respond(tab-port) {
+            width: 100%;
+            float: none;
+        }
+        
         &:link,
         &:visited {
             text-decoration: none;

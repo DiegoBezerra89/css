@@ -141,4 +141,44 @@
             font-weight: 200;
         }
     }
+
+    @include respond(tab-port) {
+        height: auto;
+        
+        &__side {
+            height: 52rem;
+            transition: all .9s ease;
+            background-color: $color-white;
+            position: relative;
+            border-radius: $radius;
+            overflow: hidden;
+    
+            &--back {
+                transform: rotateY(0deg);
+                position: absolute;
+        
+            }
+
+            &--div {
+                padding-bottom: 20rem;
+            }
+        }
+
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+
+        //FRONT SIDE
+        &__picture {
+            height: 50%;
+        }
+        
+        //TEXT FRONT SIDE
+        
+
+        //BACK SIDE
+        &__offer {
+            
+        }
+    }
 }
