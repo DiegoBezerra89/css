@@ -21,11 +21,19 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.5);
         transition: all .3s .1s;  
+        @include respond(phone) {
+            display: block;
+            overflow: auto;
+            height: 100vh;
+        }
     }
 
     &__left {
         width: 33.33333%;
         display: table-cell;
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &__right {
@@ -33,6 +41,10 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        @include respond(phone) {
+            display: block;
+            width: 100%;
+        }
     }
 
     &__image {
@@ -50,6 +62,10 @@
         -moz-hyphens: auto;
         -ms-hyphens: auto;
         hyphens: auto;
+        @include respond(phone) {
+            column-count: 1;
+            column-gap: 0;
+        }
     }
 
     &:target {
@@ -78,6 +94,12 @@
         transition: all .2s;        
         &:hover {
             color: $color-primary;
+        }
+    }
+
+    &-btn {
+        @include respond(phone) {
+            margin-left: 2rem;
         }
     }
 }
