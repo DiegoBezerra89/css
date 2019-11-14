@@ -621,7 +621,7 @@ body {
       .popup__content {
         display: block;
         overflow: auto;
-        height: 100vh; } }
+        height: 90vh; } }
   .popup__left {
     width: 33.33333%;
     display: table-cell; }
