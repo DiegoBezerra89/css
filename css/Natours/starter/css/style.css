@@ -635,7 +635,6 @@ body {
     padding: 3rem 5rem; }
     @media only screen and (max-width: 37.5em) {
       .popup__right {
-        display: block;
         width: 100%; } }
   .popup__image {
     width: 100%;
