@@ -2,8 +2,8 @@
 
 This repo contains some projects that I made on the web course by Jonas Schmedtmann: "Advanced CSS and Sass: Flexbox, Grid, Animations and More!" 
 
-## Projects
-***
+## **Projects**
+
 
 ## Natours Project
 
